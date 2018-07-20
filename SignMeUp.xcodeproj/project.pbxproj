@@ -7,14 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A35100A20CF370700323AB3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A35100920CF370700323AB3 /* User.swift */; };
+		8A35100C20CF531E00323AB3 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A35100B20CF531E00323AB3 /* UserService.swift */; };
+		8A35100F20CF621B00323AB3 /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8A35100D20CF621B00323AB3 /* CoreData.xcdatamodeld */; };
 		8A4B217120CC6F2000DFB687 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4B217020CC6F2000DFB687 /* AppDelegate.swift */; };
 		8A4B217320CC6F2000DFB687 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4B217220CC6F2000DFB687 /* ViewController.swift */; };
 		8A4B217620CC6F2000DFB687 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A4B217420CC6F2000DFB687 /* Main.storyboard */; };
 		8A4B217820CC6F2400DFB687 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A4B217720CC6F2400DFB687 /* Assets.xcassets */; };
 		8A4B217B20CC6F2400DFB687 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A4B217920CC6F2400DFB687 /* LaunchScreen.storyboard */; };
+		8A4B218320CC858500DFB687 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4B218220CC858500DFB687 /* LogInViewController.swift */; };
+		8A4B218520CC85A000DFB687 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4B218420CC85A000DFB687 /* RegisterViewController.swift */; };
+		8A4B218720CC85BE00DFB687 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4B218620CC85BE00DFB687 /* HomePageViewController.swift */; };
+		8A4B218920CC860000DFB687 /* NewStudyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4B218820CC860000DFB687 /* NewStudyViewController.swift */; };
+		8A4B218D20CDE63D00DFB687 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A4B218C20CDE63D00DFB687 /* GoogleService-Info.plist */; };
+		8AFF7E0F20EDA53D006328EC /* StudyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFF7E0E20EDA53C006328EC /* StudyService.swift */; };
+		8AFF7E1120EDA718006328EC /* Study.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFF7E1020EDA718006328EC /* Study.swift */; };
+		8AFF7E1320F47A32006328EC /* StudiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFF7E1220F47A32006328EC /* StudiesViewController.swift */; };
+		8AFF7E1520F48075006328EC /* StudyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFF7E1420F48075006328EC /* StudyTableViewCell.swift */; };
+		AEFFF51267566235CBDB746D /* Pods_SignMeUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFCFDFA25D5375B1C55E6E1A /* Pods_SignMeUp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2CFC8810C786A789709C14AE /* Pods-SignMeUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignMeUp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SignMeUp/Pods-SignMeUp.debug.xcconfig"; sourceTree = "<group>"; };
+		32486694E490933D1A0797B8 /* Pods-SignMeUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignMeUp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SignMeUp/Pods-SignMeUp.release.xcconfig"; sourceTree = "<group>"; };
+		8A35100920CF370700323AB3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8A35100B20CF531E00323AB3 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		8A35100E20CF621B00323AB3 /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
 		8A4B216D20CC6F1F00DFB687 /* SignMeUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignMeUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A4B217020CC6F2000DFB687 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A4B217220CC6F2000DFB687 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +40,16 @@
 		8A4B217720CC6F2400DFB687 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A4B217A20CC6F2400DFB687 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A4B217C20CC6F2400DFB687 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A4B218220CC858500DFB687 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		8A4B218420CC85A000DFB687 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		8A4B218620CC85BE00DFB687 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		8A4B218820CC860000DFB687 /* NewStudyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewStudyViewController.swift; sourceTree = "<group>"; };
+		8A4B218C20CDE63D00DFB687 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8AFF7E0E20EDA53C006328EC /* StudyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyService.swift; sourceTree = "<group>"; };
+		8AFF7E1020EDA718006328EC /* Study.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Study.swift; sourceTree = "<group>"; };
+		8AFF7E1220F47A32006328EC /* StudiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudiesViewController.swift; sourceTree = "<group>"; };
+		8AFF7E1420F48075006328EC /* StudyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyTableViewCell.swift; sourceTree = "<group>"; };
+		AFCFDFA25D5375B1C55E6E1A /* Pods_SignMeUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SignMeUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +57,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEFFF51267566235CBDB746D /* Pods_SignMeUp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2931B000B804F7A9602CF100 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AFCFDFA25D5375B1C55E6E1A /* Pods_SignMeUp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8A4B216420CC6F1F00DFB687 = {
 			isa = PBXGroup;
 			children = (
 				8A4B216F20CC6F1F00DFB687 /* SignMeUp */,
 				8A4B216E20CC6F1F00DFB687 /* Products */,
+				8C3A15B1ED2CECAF78673092 /* Pods */,
+				2931B000B804F7A9602CF100 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +99,29 @@
 				8A4B217720CC6F2400DFB687 /* Assets.xcassets */,
 				8A4B217920CC6F2400DFB687 /* LaunchScreen.storyboard */,
 				8A4B217C20CC6F2400DFB687 /* Info.plist */,
+				8A4B218C20CDE63D00DFB687 /* GoogleService-Info.plist */,
+				8A4B218220CC858500DFB687 /* LogInViewController.swift */,
+				8A4B218420CC85A000DFB687 /* RegisterViewController.swift */,
+				8A35100D20CF621B00323AB3 /* CoreData.xcdatamodeld */,
+				8A4B218620CC85BE00DFB687 /* HomePageViewController.swift */,
+				8A4B218820CC860000DFB687 /* NewStudyViewController.swift */,
+				8A35100920CF370700323AB3 /* User.swift */,
+				8A35100B20CF531E00323AB3 /* UserService.swift */,
+				8AFF7E0E20EDA53C006328EC /* StudyService.swift */,
+				8AFF7E1020EDA718006328EC /* Study.swift */,
+				8AFF7E1220F47A32006328EC /* StudiesViewController.swift */,
+				8AFF7E1420F48075006328EC /* StudyTableViewCell.swift */,
 			);
 			path = SignMeUp;
+			sourceTree = "<group>";
+		};
+		8C3A15B1ED2CECAF78673092 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2CFC8810C786A789709C14AE /* Pods-SignMeUp.debug.xcconfig */,
+				32486694E490933D1A0797B8 /* Pods-SignMeUp.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +131,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A4B217F20CC6F2400DFB687 /* Build configuration list for PBXNativeTarget "SignMeUp" */;
 			buildPhases = (
+				110A16CB7A9DB10ADB2A58E5 /* [CP] Check Pods Manifest.lock */,
 				8A4B216920CC6F1F00DFB687 /* Sources */,
 				8A4B216A20CC6F1F00DFB687 /* Frameworks */,
 				8A4B216B20CC6F1F00DFB687 /* Resources */,
+				D05329AC7EA7044041C2569F /* [CP] Embed Pods Frameworks */,
+				2A7DD408C603D4F459E1A406 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,11 +187,145 @@
 			files = (
 				8A4B217B20CC6F2400DFB687 /* LaunchScreen.storyboard in Resources */,
 				8A4B217820CC6F2400DFB687 /* Assets.xcassets in Resources */,
+				8A4B218D20CDE63D00DFB687 /* GoogleService-Info.plist in Resources */,
 				8A4B217620CC6F2000DFB687 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		110A16CB7A9DB10ADB2A58E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SignMeUp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A7DD408C603D4F459E1A406 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SignMeUp/Pods-SignMeUp-resources.sh",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FUIAccountSettingsViewController.nib",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FUIAuthPickerViewController.nib",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FUIAuthTableViewCell.nib",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FUIEmailEntryViewController.nib",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FUIInputTableViewCell.nib",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FUIPasswordRecoveryViewController.nib",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FUIPasswordSignInViewController.nib",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FUIPasswordSignUpViewController.nib",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FUIPasswordTableViewCell.nib",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FUIPasswordVerificationViewController.nib",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/FUIStaticContentTableViewController.nib",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/ic_email.png",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/ic_email@2x.png",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/ic_email@3x.png",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/ic_visibility.png",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/ic_visibility@2x.png",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/ic_visibility@3x.png",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/ic_visibility_off.png",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/ic_visibility_off@2x.png",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/ic_visibility_off@3x.png",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/ar.lproj",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/de.lproj",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/en-GB.lproj",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/en.lproj",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/es-419.lproj",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/es-ES.lproj",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/fr.lproj",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/it.lproj",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/ja.lproj",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/ko.lproj",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/nl.lproj",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/pl.lproj",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/pt-BR.lproj",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/ru.lproj",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/th.lproj",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/tr.lproj",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/zh-Hans.lproj",
+				"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks/FirebaseAuthUI.framework/zh-Hant.lproj",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FUIAccountSettingsViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FUIAuthPickerViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FUIAuthTableViewCell.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FUIEmailEntryViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FUIInputTableViewCell.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FUIPasswordRecoveryViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FUIPasswordSignInViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FUIPasswordSignUpViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FUIPasswordTableViewCell.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FUIPasswordVerificationViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FUIStaticContentTableViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ic_email.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ic_email@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ic_email@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ic_visibility.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ic_visibility@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ic_visibility@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ic_visibility_off.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ic_visibility_off@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ic_visibility_off@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ar.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/de.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/en-GB.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/en.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/es-419.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/es-ES.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/fr.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/it.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ja.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ko.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/nl.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/pl.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/pt-BR.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ru.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/th.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/tr.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zh-Hans.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zh-Hant.lproj",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SignMeUp/Pods-SignMeUp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D05329AC7EA7044041C2569F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SignMeUp/Pods-SignMeUp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SignMeUp/Pods-SignMeUp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8A4B216920CC6F1F00DFB687 /* Sources */ = {
@@ -137,6 +334,17 @@
 			files = (
 				8A4B217320CC6F2000DFB687 /* ViewController.swift in Sources */,
 				8A4B217120CC6F2000DFB687 /* AppDelegate.swift in Sources */,
+				8AFF7E1120EDA718006328EC /* Study.swift in Sources */,
+				8A35100F20CF621B00323AB3 /* CoreData.xcdatamodeld in Sources */,
+				8AFF7E0F20EDA53D006328EC /* StudyService.swift in Sources */,
+				8A4B218520CC85A000DFB687 /* RegisterViewController.swift in Sources */,
+				8A4B218920CC860000DFB687 /* NewStudyViewController.swift in Sources */,
+				8A35100C20CF531E00323AB3 /* UserService.swift in Sources */,
+				8A4B218720CC85BE00DFB687 /* HomePageViewController.swift in Sources */,
+				8A4B218320CC858500DFB687 /* LogInViewController.swift in Sources */,
+				8AFF7E1520F48075006328EC /* StudyTableViewCell.swift in Sources */,
+				8AFF7E1320F47A32006328EC /* StudiesViewController.swift in Sources */,
+				8A35100A20CF370700323AB3 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,9 +486,11 @@
 		};
 		8A4B218020CC6F2400DFB687 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CFC8810C786A789709C14AE /* Pods-SignMeUp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8TM9YHUFEP;
 				INFOPLIST_FILE = SignMeUp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -295,9 +505,11 @@
 		};
 		8A4B218120CC6F2400DFB687 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32486694E490933D1A0797B8 /* Pods-SignMeUp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8TM9YHUFEP;
 				INFOPLIST_FILE = SignMeUp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -332,6 +544,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8A35100D20CF621B00323AB3 /* CoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8A35100E20CF621B00323AB3 /* CoreData.xcdatamodel */,
+			);
+			currentVersion = 8A35100E20CF621B00323AB3 /* CoreData.xcdatamodel */;
+			path = CoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8A4B216520CC6F1F00DFB687 /* Project object */;
 }
