@@ -68,6 +68,7 @@ extension StudiesViewController: UITableViewDataSource {
         
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "studyCell") as! StudyTableViewCell
+       
         cell.createdByLabel.text = study.poster.firstName + " " + study.poster.lastName
             cell.ministryLabel.text = study.ministry
             cell.dateLabel.text = study.date
@@ -81,7 +82,7 @@ extension StudiesViewController: UITableViewDataSource {
     
 }
 
-extension StudiesViewController: UITableViewDelegate {
-    
-    
-}
+//extension StudiesViewController: UITableViewDelegate {
+//    
+//    
+//}

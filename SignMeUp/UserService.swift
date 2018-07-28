@@ -94,6 +94,48 @@ struct UserService {
         
     }
     
+    static func timelineAll(completion: @escaping ([Study]) -> Void) {
+      //  let currentUser = User.current
+        
+        // let timelineRef = Database.database().reference().child("timeline").child(currentUser.uid)
+        //let timelineRef = Database.database().reference().child("timeline").child(currentUser.uid)
+        let timelineRef = Database.database().reference().child("Allstudies")
+        timelineRef.observeSingleEvent(of: .value, with: { (snapshot) in
+            guard let snapshot = snapshot.children.allObjects as? [DataSnapshot]
+                else { return completion([]) }
+            
+            let dispatchGroup = DispatchGroup()
+            
+            var studies2 = [Study]()
+            
+            for studySnap in snapshot {
+                guard let studyDict = studySnap.value as? [String : Any] //,
+                   // let posterUID = studyDict["poster_uid"] as? String
+                    //                let posterDict = studyDict["poster"] as? [String : Any],
+                    //                let posterUID = posterDict["uid"] as? String
+                    else { continue }
+                
+                
+                
+                dispatchGroup.enter()
+                
+                StudyService.showAll(forKey: studySnap.key ) { (studies) in
+                      studies2 = studies //{
+//                        studies.append(study)
+//                    }
+//
+                    dispatchGroup.leave()
+                }
+            }
+
+            dispatchGroup.notify(queue: .main, execute: {
+                //completion(studies2.reversed())
+                completion(studies2)
+            })
+        })
+        
+    }
+    
     
     static func allUsers(completion: @escaping ([User]) -> Void) {
 //        let currentUser = User.current
