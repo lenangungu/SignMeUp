@@ -35,7 +35,7 @@ class AllStudiesViewController: UIViewController {
         // remove separators for empty cells
         tableView.tableFooterView = UIView()
         // remove separators from cells
-        tableView.separatorStyle = .none
+       // tableView.separatorStyle = .none
         
         refreshControl2.addTarget(self, action: #selector(reloadTimeline), for: .valueChanged)
         tableView.addSubview(refreshControl2)
@@ -71,3 +71,11 @@ extension AllStudiesViewController: UITableViewDataSource {
     
     
 }
+
+extension AllStudiesViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 150
+    }
+}
+
+

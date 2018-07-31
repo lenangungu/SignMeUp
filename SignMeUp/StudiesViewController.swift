@@ -64,7 +64,7 @@ extension StudiesViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let study = studies[indexPath.section]
+        let study = studies[indexPath.row]
         
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "studyCell") as! StudyTableViewCell
@@ -82,7 +82,8 @@ extension StudiesViewController: UITableViewDataSource {
     
 }
 
-//extension StudiesViewController: UITableViewDelegate {
-//    
-//    
-//}
+extension StudiesViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 150
+    }
+}

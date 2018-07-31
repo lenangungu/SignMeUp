@@ -190,7 +190,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pxj-VZ-b1b">
                                 <rect key="frame" x="103" y="113" width="249" height="30"/>
@@ -204,6 +204,7 @@
                         <viewLayoutGuide key="safeArea" id="m8C-fZ-qfA"/>
                     </view>
                     <connections>
+                        <outlet property="churchPickerView" destination="2Sr-yN-T5B" id="Qdb-em-r8L"/>
                         <outlet property="emailTextField" destination="Pxj-VZ-b1b" id="Zyd-4x-C0D"/>
                         <outlet property="passwordTextField" destination="i0b-Xl-Cky" id="73z-2P-05t"/>
                         <segue destination="l29-to-PEP" kind="show" identifier="logIn" id="i7E-DQ-kUb"/>

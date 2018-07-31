@@ -17,10 +17,13 @@ class LogInViewController: UIViewController {
     @IBOutlet var emailTextField: UITextField!
     
     @IBOutlet var passwordTextField: UITextField!
+    @IBOutlet var churchPickerView: UIPickerView!
+    let churches = ["Dallas Fort Worth ICC", "New York City ICC", "Orlando ICC"]
+    
     override func viewDidLoad() {
+        churchPickerView.dataSource = self
+        churchPickerView.delegate = self
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -130,4 +133,17 @@ extension LogInViewController: FUIAuthDelegate {
  // Pass the selected object to the new view controller.
  }
  */
+extension LogInViewController: UIPickerViewDelegate, UIPickerViewDataSource {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+       return churches.count
+    }
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return churches[row]
+    }
+    
+}
 
