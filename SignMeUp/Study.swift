@@ -11,6 +11,7 @@ import FirebaseDatabase.FIRDataSnapshot
 
 class Study {
     
+    var studyTitle: String
     var personName: String
     var date: String
     var time: String
@@ -24,7 +25,8 @@ class Study {
         let userDict = ["uid" : poster.uid,
                         "firstName" : poster.firstName,
                         "lastName" : poster.lastName]
-        return ["personName" : personName,
+        return ["studyTitle" : studyTitle,
+                "personName" : personName,
                 "date" : date,
                 "time" : time,
                 "location" : location,
@@ -35,7 +37,8 @@ class Study {
     
     var key: String?
     
-    init(personName: String, date: String, time: String, location: String, ministry: String, people: Int){
+    init(studyTitle: String, personName: String, date: String, time: String, location: String, ministry: String, people: Int){
+        self.studyTitle = studyTitle
         self.personName = personName
         self.date = date
         self.time = time
@@ -47,6 +50,7 @@ class Study {
     
     init?(snapshot: DataSnapshot) {
         guard let dict = snapshot.value as? [String : Any],
+        let studyTitle = dict["studyTitle"] as? String,
         let personName  = dict["personName"] as? String,
         let date = dict["date"] as? String,
         let time = dict["time"] as? String,
@@ -60,6 +64,7 @@ class Study {
 
         else { return nil }
         
+        self.studyTitle = studyTitle
         self.personName = personName
         self.date = date
         self.time = time

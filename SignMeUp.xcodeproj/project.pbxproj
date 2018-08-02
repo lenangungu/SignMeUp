@@ -22,6 +22,7 @@
 		8A4B218D20CDE63D00DFB687 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A4B218C20CDE63D00DFB687 /* GoogleService-Info.plist */; };
 		8A7B14A62106CB6200B361F9 /* AllStudiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7B14A52106CB6200B361F9 /* AllStudiesTableViewCell.swift */; };
 		8A7B14AE2107CEB600B361F9 /* AllStudiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7B14AD2107CEB600B361F9 /* AllStudiesViewController.swift */; };
+		8AD1EBC321100DE300802955 /* MyStudyDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD1EBC221100DE300802955 /* MyStudyDetailsViewController.swift */; };
 		8AFF7E0F20EDA53D006328EC /* StudyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFF7E0E20EDA53C006328EC /* StudyService.swift */; };
 		8AFF7E1120EDA718006328EC /* Study.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFF7E1020EDA718006328EC /* Study.swift */; };
 		8AFF7E1320F47A32006328EC /* StudiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFF7E1220F47A32006328EC /* StudiesViewController.swift */; };
@@ -49,6 +50,7 @@
 		8A4B218C20CDE63D00DFB687 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8A7B14A52106CB6200B361F9 /* AllStudiesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllStudiesTableViewCell.swift; sourceTree = "<group>"; };
 		8A7B14AD2107CEB600B361F9 /* AllStudiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllStudiesViewController.swift; sourceTree = "<group>"; };
+		8AD1EBC221100DE300802955 /* MyStudyDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStudyDetailsViewController.swift; sourceTree = "<group>"; };
 		8AFF7E0E20EDA53C006328EC /* StudyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyService.swift; sourceTree = "<group>"; };
 		8AFF7E1020EDA718006328EC /* Study.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Study.swift; sourceTree = "<group>"; };
 		8AFF7E1220F47A32006328EC /* StudiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudiesViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				8AFF7E1420F48075006328EC /* StudyTableViewCell.swift */,
 				8A7B14A52106CB6200B361F9 /* AllStudiesTableViewCell.swift */,
 				8A7B14AD2107CEB600B361F9 /* AllStudiesViewController.swift */,
+				8AD1EBC221100DE300802955 /* MyStudyDetailsViewController.swift */,
 			);
 			path = SignMeUp;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 				8AFF7E1120EDA718006328EC /* Study.swift in Sources */,
 				8A7B14A62106CB6200B361F9 /* AllStudiesTableViewCell.swift in Sources */,
 				8A7B14AE2107CEB600B361F9 /* AllStudiesViewController.swift in Sources */,
+				8AD1EBC321100DE300802955 /* MyStudyDetailsViewController.swift in Sources */,
 				8A35100F20CF621B00323AB3 /* CoreData.xcdatamodeld in Sources */,
 				8AFF7E0F20EDA53D006328EC /* StudyService.swift in Sources */,
 				8A4B218520CC85A000DFB687 /* RegisterViewController.swift in Sources */,

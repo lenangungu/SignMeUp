@@ -14,6 +14,7 @@ class NewStudyViewController: UIViewController {
     @IBOutlet var nameTextField: UITextField!
     @IBOutlet var locationTextField: UITextField!
     @IBOutlet var datePicker: UIDatePicker!
+    @IBOutlet var studyTitleTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,14 +30,15 @@ class NewStudyViewController: UIViewController {
     
     @IBAction func createButtonTapped(_ sender: Any) {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "EEEE,MMMM dd"
+        dateFormatter.dateFormat = "EEEE, MMMM dd"
         let day = dateFormatter.string(from: datePicker.date)
         dateFormatter.dateFormat = "hh:mma"
         let time = dateFormatter.string(from: datePicker.date)
         let personName = nameTextField.text ?? ""
         let location = locationTextField.text ?? "" 
         let ministry = "campus"
-        StudyService.create(personName: personName, date: day, time: time, location: location, ministry: ministry, people: 1)
+        let studyTitle = studyTitleTextField.text ?? ""
+        StudyService.create(studyTitle: studyTitle, personName: personName, date: day, time: time, location: location, ministry: ministry, people: 1)
         
     }
     

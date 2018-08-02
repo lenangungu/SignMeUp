@@ -11,9 +11,9 @@ import FirebaseDatabase
 import FirebaseStorage
 
 struct StudyService {
-    static func create(personName: String, date: String, time: String,location: String, ministry: String, people: Int) {
+    static func create(studyTitle: String, personName: String, date: String, time: String, location: String, ministry: String, people: Int) {
         let currentUser = User.current
-        let study = Study(personName: personName, date: date, time: time, location: location, ministry: ministry, people: people)
+        let study = Study(studyTitle: studyTitle, personName: personName, date: date, time: time, location: location, ministry: ministry, people: people)
         
         let rootRef = Database.database().reference()
         let newStudy = rootRef.child("studies").child(currentUser.uid).childByAutoId()

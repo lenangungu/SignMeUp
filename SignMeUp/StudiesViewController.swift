@@ -46,6 +46,20 @@ class StudiesViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let nextVC =  segue.destination as! MyStudyDetailsViewController
+        let index = tableView.indexPathForSelectedRow!.row
+        let study = studies[index]
+        nextVC.createdBy = study.poster.firstName + " " + study.poster.lastName
+        nextVC.personName = study.personName
+        nextVC.date = study.date
+        nextVC.time = study.time
+//        nextVC.sittingInOneLabel.text =
+//        nextVC.sittingInThreeLabel =
+//        nextVC.sittingInTwoLabel =
+        nextVC.studyTitle = study.studyTitle 
+
+    }
     
     /*
      // MARK: - Navigation
@@ -86,4 +100,5 @@ extension StudiesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 150
     }
+
 }
